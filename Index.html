@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ✅ Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is Ajit Singh's food delivery website — a simple and clean clone of Zomato made using HTML.">
+    <meta name="keywords" content="HTML, CSS, Delivery, Zomato, Ajit Singh, Food, Order, Pizza, Burger, Soft Drinks">
+    <meta name="author" content="Ajit Singh">
+
+
+    <!-- <meta http-equiv="refresh" content="5;url=https://google.com"> -->
+
+    <!-- ✅ Robots Meta (SEO) -->
+    <meta name="robots" content="index, follow">
+
+    <!-- ✅ Open Graph Meta (for social sharing like Facebook / LinkedIn) -->
+    <meta property="og:title" content="Ajit Singh's Food Delivery Website">
+    <meta property="og:description"
+        content="A simple HTML clone of Zomato's homepage. Order your favorite pizza, burger, and more.">
+    <meta property="og:image" content="zomato.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsiteurl.com">
+
+    <!-- ✅ Title -->
+    <title>Zomato Clone - Ajit Singh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <!-- 1. Header Row: Contains Logo, Search Bar, and Buttons -->
+    <div class="header-row">
+
+        <!-- Logo -->
+        <div class="title">zomato</div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <!-- Location -->
+            <div class="location-wrapper">
+                <i class="fa-solid fa-location-dot location-icon"></i>
+                <span class="location-text">Mumbai</span>
+                <i class="fa-solid fa-caret-down arrow-icon"></i>
+            </div>
+
+            <!-- Divider Line -->
+            <div class="divider"></div>
+
+            <!-- Search Input -->
+            <div class="search-wrapper">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" class="search-input" placeholder="Search for restaurant, cuisine or a dish">
+            </div>
+        </div>
+
+        <!-- Login/Sign Up Buttons -->
+        <div class="auth-buttons">
+            <button class="login-btn">Log in</button>
+            <button class="signup-btn">Sign up</button>
+        </div>
+    </div>
+
+    <!-- 2. Navigation (New Line) -->
+    <nav class="nav-container">
+        <a href="#" class="nav-link">Home</a>
+        <span class="nav-separator">/</span>
+        <a href="#" class="nav-link">India</a>
+        <span class="nav-separator">/</span>
+        <a href="#" class="nav-link" style="color: #cfcfcf;">Mumbai Restaurants</a>
+    </nav>
+
+    <div class="category-tabs">
+        <!-- Dining out -->
+
+        <div class="tab-1">
+            <div class="icon-circle">
+                <i class="fa-solid fa-utensils icon-image"></i>
+            </div>
+            <span class="tab-text">Dining Out</span>
+        </div>
+
+        <!-- Dellivary -->
+
+        <div class="tab-1">
+            <div class="icon-circle">
+                <i class="fa-solid fa-motorcycle icon-image"></i>
+            </div>
+            <span class="tab-text">Dining Out</span>
+        </div>
+
+        <!-- Nightlife -->
+
+        <div class="tab-1">
+            <div class="icon-circle">
+                <i class="fa-solid fa-martini-glass-citrus icon-image"></i>
+            </div>
+            <span class="tab-text">Dining Out</span>
+        </div>
+    </div>
+
+
+    <!--  Collection container -->
+
+    <div class="section-container">
+        <div class="collection-text">Collections</div>
+        <div class="collection-sentence">
+            <span class="collection-sentence">Explore curated lists of top restaurants, cafes, pubs, and bars in Mumbai,
+                based on trends
+            </span>
+            <span class="collection-link">
+                <a href="#" class="collection link">All collections in mumbai</a>
+                <i class="fa-solid fa-caret-right arrow-icon2"> </i>
+            </span>
+        </div>
+        <div class="collection-grid">
+            <div class="collection-card"
+                style="background: url('https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover;">
+                <div class="card-content">
+                    <div class="card-title">Top Trending Spots</div>
+                    <div class="card-subtitle">35 Places <i class="fa-solid fa-caret-right" style="margin-left:5px"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="collection-card"
+                style="background: url('https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=600')  center/cover;">
+                <div class="card-content">
+                    <div class="card-title">Insta-worthy Spots</div>
+                    <div class="card-subtitle">29 Places <i class="fa-solid fa-caret-right" style="margin-left:5px"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="collection-card"
+                style="background: url('https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover;">
+                <div class="card-content">
+                    <div class="card-title">Best pubs & bars</div>
+                    <div class="card-subtitle">35 places <i class="fa-solid fa-caret-right" style="margin-left:5px"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="collection-card"
+                style="background: url('https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover;">
+                <div class="card-content">
+                    <div class="card-title">
+                        Omakase bars
+                    </div>
+                    <div class="card-subtitle">9 Places <i class="fa-solid fa-caret-right" style="margin-left:5px"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="suggestion-btn">
+        <button class="suggestion-button"><i class="fa-solid fa-sliders filter-icon">Filters</i></button>
+        <button class="suggestion-button">Offers</button>
+        <button class="suggestion-button">Rating: 4.5+ </button>
+        <button class="suggestion-button">Pet freindly</button>
+        <button class="suggestion-button">Outdoor seating</button>
+        <button class="suggestion-button">Serves Alchol</button>
+        <button class="suggestion-button">Open Now</button>
+
+    </div>
+    <div class="discount-container"
+        style="background:url('//images.pexels.com/photos/30869948/pexels-photo-30869948.jpeg?_gl=1*15yv0ay*_ga*NDkxMTM4NTAzLjE3NjM4MTE2ODE.*_ga_8JE65Q40S6*czE3NjM4MTE2ODAkbzEkZzEkdDE3NjM4MTE4NTAkajU5JGwwJGgw') center/cover;">
+        <div class="discount-content">
+            <div class="discount-text">
+                <p class="first-line">Get up to</p>
+                <h1 class="second-line"> 50% off</h1>
+                <span class="third-line">on your dining bills with zomato</span>
+            </div>
+            <div class="button-container">
+                <button class="discount-button">Check out all the restaurants</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="restaurant-text">
+        <h1 class="restaurant-text1">Restaurants in Mumbai</h1>
+    </div>
+
+
+    <!-- Hotel container -->
+    <div class="hotel-container">
+
+        <!-- First row -->
+        <div class="first-row">
+            <!-- first card -->
+            <div class="hotel-card">
+                <div class="hotel-banner"
+                    style="background:url('https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat;">
+                </div>
+                <div class="hotel-text">
+                    <span class="rows-column title2"> ilili <button class="hotel-rating">4.3 <i
+                                class="fa-solid fa-star star-icon"></i> </button></span>
+                    <br>
+                    <span class="rows-column">
+                        Middle Eastern, Cont..
+
+                        <i class="fa-solid fa-indian-rupee-sign icon"></i> 2,500 for two</span>
+                    <br>
+                    <span class="rows-column">
+                        <p>Dadar East, Mumbai</p>
+                        1.3km
+                    </span>
+                </div>
+
+            </div>
+            <!-- Second card -->
+            <div class="hotel-card">
+                <div class="hotel-banner"
+                    style="background:url('https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat;">
+                </div>
+                <div class="hotel-text">
+                    <span class="rows-column title2"> British Brewing Company <button class="hotel-rating">4.2 <i
+                                class="fa-solid fa-star star-icon"></i> </button></span>
+                    <br>
+                    <span class="rows-column">
+                        North Eastern, Cont...
+
+                        <i class="fa-solid fa-indian-rupee-sign icon"></i> 2,900 for two </span>
+                    <br>
+                    <span class="rows-column">
+                        <p> parel, Mumbai </p>
+
+                        5.3km
+                    </span>
+                </div>
+
+            </div>
+            <!-- Third card -->
+            <div class="hotel-card">
+                <div class="hotel-banner"
+                    style="background:url('https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat;">
+                </div>
+                <div class="hotel-text">
+                    <span class="rows-column title2">Foo Asian Tapas <button class="hotel-rating">4.6 <i
+                                class="fa-solid fa-star star-icon"></i> </button></span>
+                    <br>
+                    <span class="rows-column">
+                        Chinese, Asian,Sush...
+
+                        <i class="fa-solid fa-indian-rupee-sign  icon"></i> 2900 for two </span>
+                    <br>
+                    <span class="rows-column">
+                        <p>Byculla East, Mumbai </p>
+
+                        2.3km
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="hotel-container">
+
+        <!-- First row -->
+        <div class="first-row">
+            <!-- first card -->
+            <div class="hotel-card">
+                <div class="hotel-banner"
+                    style="background:url('https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat;">
+                </div>
+                <div class="hotel-text">
+                    <span class="rows-column title2"> ilili <button class="hotel-rating">4.3 <i
+                                class="fa-solid fa-star star-icon"></i> </button></span>
+                    <br>
+                    <span class="rows-column">
+                        Middle Eastern, Cont..
+
+                        <i class="fa-solid fa-indian-rupee-sign icon"></i> 2,500 for two</span>
+                    <br>
+                    <span class="rows-column">
+                        <p>Dadar East, Mumbai</p>
+                        1.3km
+                    </span>
+                </div>
+
+            </div>
+            <!-- Second card -->
+            <div class="hotel-card">
+                <div class="hotel-banner"
+                    style="background:url('https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat;">
+                </div>
+                <div class="hotel-text">
+                    <span class="rows-column title2"> British Brewing Company <button class="hotel-rating">4.2 <i
+                                class="fa-solid fa-star star-icon"></i> </button></span>
+                    <br>
+                    <span class="rows-column">
+                        North Eastern, Cont...
+
+                        <i class="fa-solid fa-indian-rupee-sign icon"></i> 2,900 for two </span>
+                    <br>
+                    <span class="rows-column">
+                        <p> parel, Mumbai </p>
+
+                        5.3km
+                    </span>
+                </div>
+
+            </div>
+            <!-- Third card -->
+            <div class="hotel-card">
+                <div class="hotel-banner"
+                    style="background:url('https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat;">
+                </div>
+                <div class="hotel-text">
+                    <span class="rows-column title2">Foo Asian Tapas <button class="hotel-rating">4.6 <i
+                                class="fa-solid fa-star star-icon"></i> </button></span>
+                    <br>
+                    <span class="rows-column">
+                        Chinese, Asian,Sush...
+
+                        <i class="fa-solid fa-indian-rupee-sign  icon"></i> 2900 for two </span>
+                    <br>
+                    <span class="rows-column">
+                        <p>Byculla East, Mumbai </p>
+
+                        2.3km
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="hotel-container">
+
+        <!-- First row -->
+        <div class="first-row">
+            <!-- first card -->
+            <div class="hotel-card">
+                <div class="hotel-banner"
+                    style="background:url('https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat;">
+                </div>
+                <div class="hotel-text">
+                    <span class="rows-column title2"> ilili <button class="hotel-rating">4.3 <i
+                                class="fa-solid fa-star star-icon"></i> </button></span>
+                    <br>
+                    <span class="rows-column">
+                        Middle Eastern, Cont..
+
+                        <i class="fa-solid fa-indian-rupee-sign icon"></i> 2,500 for two</span>
+                    <br>
+                    <span class="rows-column">
+                        <p>Dadar East, Mumbai</p>
+                        1.3km
+                    </span>
+                </div>
+
+            </div>
+            <!-- Second card -->
+            <div class="hotel-card">
+                <div class="hotel-banner"
+                    style="background:url('https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat;">
+                </div>
+                <div class="hotel-text">
+                    <span class="rows-column title2"> British Brewing Company <button class="hotel-rating">4.2 <i
+                                class="fa-solid fa-star star-icon"></i> </button></span>
+                    <br>
+                    <span class="rows-column">
+                        North Eastern, Cont...
+
+                        <i class="fa-solid fa-indian-rupee-sign icon"></i> 2,900 for two </span>
+                    <br>
+                    <span class="rows-column">
+                        <p> parel, Mumbai </p>
+
+                        5.3km
+                    </span>
+                </div>
+
+            </div>
+            <!-- Third card -->
+            <div class="hotel-card">
+                <div class="hotel-banner"
+                    style="background:url('https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat;">
+                </div>
+                <div class="hotel-text">
+                    <span class="rows-column title2">Foo Asian Tapas <button class="hotel-rating">4.6 <i
+                                class="fa-solid fa-star star-icon"></i> </button></span>
+                    <br>
+                    <span class="rows-column">
+                        Chinese, Asian,Sush...
+
+                        <i class="fa-solid fa-indian-rupee-sign  icon"></i> 2900 for two </span>
+                    <br>
+                    <span class="rows-column">
+                        <p>Byculla East, Mumbai </p>
+
+                        2.3km
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="hotel-container">
+
+        <!-- First row -->
+        <div class="first-row">
+            <!-- first card -->
+            <div class="hotel-card">
+                <div class="hotel-banner"
+                    style="background:url('https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat;">
+                </div>
+                <div class="hotel-text">
+                    <span class="rows-column title2"> ilili <button class="hotel-rating">4.3 <i
+                                class="fa-solid fa-star star-icon"></i> </button></span>
+                    <br>
+                    <span class="rows-column">
+                        Middle Eastern, Cont..
+
+                        <i class="fa-solid fa-indian-rupee-sign icon"></i> 2,500 for two</span>
+                    <br>
+                    <span class="rows-column">
+                        <p>Dadar East, Mumbai</p>
+                        1.3km
+                    </span>
+                </div>
+
+            </div>
+            <!-- Second card -->
+            <div class="hotel-card">
+                <div class="hotel-banner"
+                    style="background:url('https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat;">
+                </div>
+                <div class="hotel-text">
+                    <span class="rows-column title2"> British Brewing Company <button class="hotel-rating">4.2 <i
+                                class="fa-solid fa-star star-icon"></i> </button></span>
+                    <br>
+                    <span class="rows-column">
+                        North Eastern, Cont...
+
+                        <i class="fa-solid fa-indian-rupee-sign icon"></i> 2,900 for two </span>
+                    <br>
+                    <span class="rows-column">
+                        <p> parel, Mumbai </p>
+
+                        5.3km
+                    </span>
+                </div>
+
+            </div>
+            <!-- Third card -->
+            <div class="hotel-card">
+                <div class="hotel-banner"
+                    style="background:url('https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat;">
+                </div>
+                <div class="hotel-text">
+                    <span class="rows-column title2">Foo Asian Tapas <button class="hotel-rating">4.6 <i
+                                class="fa-solid fa-star star-icon"></i> </button></span>
+                    <br>
+                    <span class="rows-column">
+                        Chinese, Asian,Sush...
+
+                        <i class="fa-solid fa-indian-rupee-sign  icon"></i> 2900 for two </span>
+                    <br>
+                    <span class="rows-column">
+                        <p>Byculla East, Mumbai </p>
+
+                        2.3km
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="hotel-container">
+
+        <!-- First row -->
+        <div class="first-row">
+            <!-- first card -->
+            <div class="hotel-card">
+                <div class="hotel-banner"
+                    style="background:url('https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat;">
+                </div>
+                <div class="hotel-text">
+                    <span class="rows-column title2"> ilili <button class="hotel-rating">4.3 <i
+                                class="fa-solid fa-star star-icon"></i> </button></span>
+                    <br>
+                    <span class="rows-column">
+                        Middle Eastern, Cont..
+
+                        <i class="fa-solid fa-indian-rupee-sign icon"></i> 2,500 for two</span>
+                    <br>
+                    <span class="rows-column">
+                        <p>Dadar East, Mumbai</p>
+                        1.3km
+                    </span>
+                </div>
+
+            </div>
+            <!-- Second card -->
+            <div class="hotel-card">
+                <div class="hotel-banner"
+                    style="background:url('https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat;">
+                </div>
+                <div class="hotel-text">
+                    <span class="rows-column title2"> British Brewing Company <button class="hotel-rating">4.2 <i
+                                class="fa-solid fa-star star-icon"></i> </button></span>
+                    <br>
+                    <span class="rows-column">
+                        North Eastern, Cont...
+
+                        <i class="fa-solid fa-indian-rupee-sign icon"></i> 2,900 for two </span>
+                    <br>
+                    <span class="rows-column">
+                        <p> parel, Mumbai </p>
+
+                        5.3km
+                    </span>
+                </div>
+
+            </div>
+            <!-- Third card -->
+            <div class="hotel-card">
+                <div class="hotel-banner"
+                    style="background:url('https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat;">
+                </div>
+                <div class="hotel-text">
+                    <span class="rows-column title2">Foo Asian Tapas <button class="hotel-rating">4.6 <i
+                                class="fa-solid fa-star star-icon"></i> </button></span>
+                    <br>
+                    <span class="rows-column">
+                        Chinese, Asian,Sush...
+
+                        <i class="fa-solid fa-indian-rupee-sign  icon"></i> 2900 for two </span>
+                    <br>
+                    <span class="rows-column">
+                        <p>Byculla East, Mumbai </p>
+
+                        2.3km
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="accordion-wrapper">
+        <h2 class="accordion-title">Explore options near me</h2>
+
+        <!-- Item 1: Popular Cuisines (Added 'open' attribute so it's expanded by default) -->
+        <details class="accordion-item" open>
+            <summary class="accordion-header">
+                <span>Popular cuisines near me</span>
+                <i class="fa-solid fa-angle-down accordion-icon"></i>
+            </summary>
+            <div class="accordion-content">
+                <a href="#" class="cuisine-link">Bakery near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Beverages near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Biryani near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Burger near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Chinese near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Continental near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Desserts near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Ice Cream near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Italian near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Kebab near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Maharashtrian near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Mughlai near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">North Indian near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Pizza near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Sandwich near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Seafood near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Shake near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Sichuan near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">South Indian near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Street Food near me</a>
+            </div>
+        </details>
+
+        <!-- Item 2 -->
+        <details class="accordion-item">
+            <summary class="accordion-header">
+                <span>Popular restaurant types near me</span>
+                <i class="fa-solid fa-angle-down accordion-icon"></i>
+            </summary>
+            <div class="accordion-content">
+                <a href="#" class="cuisine-link">Bakeries near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Bars near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Beverage Shops near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Bhojanalya near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Cafés near me</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Casual Dining near me</a>
+            </div>
+        </details>
+
+        <!-- Item 3 -->
+        <details class="accordion-item">
+            <summary class="accordion-header">
+                <span>Explore Dining Cities at Zomato</span>
+                <i class="fa-solid fa-angle-down accordion-icon"></i>
+            </summary>
+            <div class="accordion-content">
+                <a href="#" class="cuisine-link">Delhi NCR</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Kolkata</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Mumbai</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Bengaluru</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Pune</a>
+            </div>
+        </details>
+
+        <!-- Item 4 -->
+        <details class="accordion-item">
+            <summary class="accordion-header">
+                <span>Restaurants in Popular Locations</span>
+                <i class="fa-solid fa-angle-down accordion-icon"></i>
+            </summary>
+            <div class="accordion-content">
+                <a href="#" class="cuisine-link">Restaurants in Andheri West</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Restaurants in Bandra West</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Restaurants in Lower Parel</a>
+            </div>
+        </details>
+
+        <!-- Item 5 -->
+        <details class="accordion-item">
+            <summary class="accordion-header">
+                <span>Discover More Fun</span>
+                <i class="fa-solid fa-angle-down accordion-icon"></i>
+            </summary>
+            <div class="accordion-content">
+                <a href="#" class="cuisine-link">Blinkit</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Feeding India</a> <span class="dot">•</span>
+                <a href="#" class="cuisine-link">Hyperpure</a>
+            </div>
+        </details>
+
+    </div>
+
+
+    <div class="about-container">
+        <div class="about-content">
+            <h1 class="about-title">Zomato</h1>
+            <div class="all-buttons">
+                <button class="about-button">🇮🇳 Indian </button>
+
+                <button class="about-button"><i class="fa-solid fa-globe about-button"></i>English</button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <div class="footer">
+        <span class="footer-text">By continuing past this page, you agree to our Terms of Service, Cookie Policy,
+            Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2025 ©
+            Zomato™ Ltd. All rights reserved.</span>
+    </div>
+
+
+
+</body>
+
+</html>
