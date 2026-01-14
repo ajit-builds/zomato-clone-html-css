@@ -16,9 +16,9 @@ Zomato_Ui/
 └── README.md
 
 
-##Live Demo
+## 🌐 Live Demo
+👉 [View Zomato UI Clone Live](https://zomato-clone-html-css-h18v.vercel.app)
 
-zomato-clone-html-css-h18v.vercel.app
 
 ## Author
 Ajit Singh
